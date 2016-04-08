@@ -1,7 +1,6 @@
 import os
 import time
 from PIL import Image
-#from resizeimage import resizeimage
 
 """James' Logo adding tool for StartUp Algonquin -
 It adds the StartUp Algonquin logo to batches of photos
@@ -20,17 +19,17 @@ logoWidth, logoHeight = logoIm.size
 if not os.path.exists('withLogo'):
     os.makedirs('withLogo')
 
-#Timer start
-start = time.clock()
-count = 0
-
 # change this ratio variable according to the width of the image
 ratio = 4
 aspRatio = 0.3804262036
 
+#Timer start
+start = time.clock()
+count = 0
+
 #Loop over all photos in a directory
 for filename in os.listdir('.'):
-    if not (filename.endswith('.jpg') or filename.endswith('.JPG')) \
+    if not (filename.endswith('.png') or filename.endswith('.jpg')) \
 	or filename == LOGO_FILENAME:
 	    continue
 		

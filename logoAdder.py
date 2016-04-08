@@ -22,6 +22,7 @@ if not os.path.exists('withLogo'):
 # change this ratio variable according to the width of the image
 ratio = 4
 aspRatio = 0.3804262036
+
 #Timer start
 start = time.clock()
 count = 0
