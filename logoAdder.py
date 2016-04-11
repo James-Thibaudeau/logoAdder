@@ -1,3 +1,4 @@
+import __future__
 import os
 import time
 from PIL import Image
@@ -19,8 +20,8 @@ aspRatio = (float(logoWidth) / float(logoHeight))
 if not os.path.exists('withLogo'):
     os.makedirs('withLogo')
 
-# change this ratio variable according to the width of the image
-ratio = 4
+# ask user for the logo to image ratio they want
+logoToPhotoRatio = eval(compile(raw_input("Enter the logo to photo ratio in the form (1/n): "), '<string>', 'eval', __future__.division.compiler_flag))
 
 #Timer start
 start = time.clock()
@@ -34,8 +35,8 @@ for filename in os.listdir('.'):
 
 	im = Image.open(filename) 
 	imWidth, imHeight = im.size
-	logoWidth = int(imWidth / ratio)
-	logoHeight = int(logoWidth * aspRatio)
+	logoWidth = int(imWidth * logoToPhotoRatio)
+	logoHeight = int(logoWidth / aspRatio)
 	logoIm = logoIm.resize((logoWidth, logoHeight), Image.ANTIALIAS)
 
 	print 'Adding %s to %s...' %(LOGO_FILENAME, filename)
