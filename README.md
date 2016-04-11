@@ -7,3 +7,5 @@ To use it you need to have pillow installed
 pip install Pillow
 
 Usable on Python 2.7 and Python 3
+
+My name is Allen.
