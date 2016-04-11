@@ -16,6 +16,7 @@ ratio = float(input("Enter the ratio of the logo to the image: "))
 
 logoIm = Image.open(LOGO_FILENAME)
 logoWidth, logoHeight = logoIm.size
+# this is a comment
 
 if not os.path.exists('withLogo'):
     os.makedirs('withLogo')
