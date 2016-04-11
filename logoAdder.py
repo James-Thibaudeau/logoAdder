@@ -7,7 +7,6 @@ It adds the StartUp Algonquin logo to batches of photos
 Version 1.0 Python 2.7"""
 
 #Load the image
-SQUARE_FIT_SIZE = 300.0
 print "This is James' logo adding tool version 1.0 FOR PYTHON 2.7"
 print "\n**************************\n"
 
@@ -15,13 +14,13 @@ LOGO_FILENAME = raw_input("Enter a file name: ")
 
 logoIm = Image.open(LOGO_FILENAME)
 logoWidth, logoHeight = logoIm.size
+aspRatio = (float(logoWidth) / float(logoHeight))
 
 if not os.path.exists('withLogo'):
     os.makedirs('withLogo')
 
 # change this ratio variable according to the width of the image
 ratio = 4
-aspRatio = 0.3804262036
 
 #Timer start
 start = time.clock()
