@@ -12,17 +12,10 @@ print("This is James' logo adding tool version 1.0 PYTHON 3")
 print("\n**************************\n")
 
 LOGO_FILENAME = input("Enter a file name: ")
-ratio = float(input("Enter the ratio of the logo to the image: "))
-
-logoIm = Image.open(LOGO_FILENAME)
-logoWidth, logoHeight = logoIm.size
-# this is a comment
+ratio = eval(input("Enter the ratio of the logo to the image: "))
 
 if not os.path.exists('withLogo'):
     os.makedirs('withLogo')
-
-# change this ratio variable according to the width of the image
-aspRatio = float(logoWidth / logoHeight)
 
 #Timer start
 start = time.clock()
@@ -32,7 +25,13 @@ for filename in os.listdir('.'):
     if not (filename.endswith('.png') or filename.endswith('.jpg')) \
 	or filename == LOGO_FILENAME:
 	    continue
+
+    logoIm = Image.open(LOGO_FILENAME)
+    logoWidth, logoHeight = logoIm.size
 		
+    # change this ratio variable according to the width of the image
+    aspRatio = float(logoWidth / logoHeight)
+
     im = Image.open(filename) 
     imWidth, imHeight = im.size
     logoWidth = int(imWidth * ratio)
