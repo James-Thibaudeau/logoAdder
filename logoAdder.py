@@ -7,7 +7,6 @@ from PIL import Image
 It adds the StartUp Algonquin logo to batches of photos
 Version 1.0 Python 2.7"""
 
-#Load the image
 print "This is James' logo adding tool version 1.0 FOR PYTHON 2.7"
 print "\n**************************\n"
 
