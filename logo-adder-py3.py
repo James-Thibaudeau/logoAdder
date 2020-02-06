@@ -6,12 +6,8 @@ from PIL import Image
 # version number
 VERSION = 1.1
 
-"""James' Logo adding tool for StartUp Algonquin -
-It adds the StartUp Algonquin logo to batches of photos
-Version 1.1"""
-
 # Load the image
-print("This is James' logo adding tool version %d" %(VERSION))
+print("This is logo adding tool, version %d" %(VERSION))
 print("\n**************************\n")
 
 # gets the logo file number with extension from the user
