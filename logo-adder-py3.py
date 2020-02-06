@@ -5,6 +5,7 @@ from PIL import Image
 
 # version number
 VERSION = 1.1
+PHOTOS_DIRECTORY = "./example-photos/"
 
 # Load the image
 print("This is logo adding tool, version " + str(VERSION))
@@ -14,7 +15,7 @@ print("\n**************************\n")
 LOGO_FILENAME = input("Enter a file name: ")
 
 # loads the image, size, and the ratio
-logoIm = Image.open(LOGO_FILENAME)
+logoIm = Image.open(PHOTOS_DIRECTORY + LOGO_FILENAME)
 logoWidth, logoHeight = logoIm.size
 logoRatio = logoHeight / logoWidth
 
@@ -30,13 +31,13 @@ start = time.clock()
 count = 0
 
 # loop over all photos in a directory
-for filename in os.listdir('.'):
+for filename in os.listdir(PHOTOS_DIRECTORY):
     if not (filename.endswith('.jpg') or filename.endswith('.JPG') \
 	    or filename.endswith('.jpeg') or filename.endswith('.JPEG')) \
 	or filename == LOGO_FILENAME:
 	    continue
 
-    im = Image.open(filename) 
+    im = Image.open(PHOTOS_DIRECTORY + filename) 
     imWidth, imHeight = im.size
     logoWidth = int(imWidth / LOGO_RATIO)
     logoHeight = int(logoWidth * logoRatio)
