@@ -1,9 +1,18 @@
 # Logo Adder
 
-This is a tool I created for StartUp Algonquin to automate adding the club logo to event photos.
+## Description
 
-To use it you need to have pillow installed
+A bare-bones python script to quickly add a logo to photos.
 
-pip install Pillow
+## Usage
 
-Usable on Python 2.7 and Python 3
+In order to use the script, pillow must be installed: 
+
+```pip install Pillow
+```
+
+Available on Python 2.x and Python 3.x
+
+## Copyright
+
+Copyright (c) 2020 Allen Hsu, James Thibaudeau
