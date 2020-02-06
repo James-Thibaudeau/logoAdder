@@ -18,7 +18,7 @@ Once pillow is installed, try running the following in your command line:
 python3 logo-adder-py3.py
 ```
 
-Following the prompt, you should see the following:
+Following the prompt, you should see the following using the 3 example photos:
 
 ```python
 This is logo adding tool, version 1.1
@@ -37,6 +37,10 @@ Adding logo-example-1.png to example-2.jpg...
 ```
 
 Available on Python 2.x and Python 3.x
+
+## Disclaimer
+
+Note that none of the example photos are owned by us.
 
 ## Copyright
 
