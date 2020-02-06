@@ -7,7 +7,7 @@ from PIL import Image
 VERSION = 1.1
 
 # Load the image
-print("This is logo adding tool, version %d" %(VERSION))
+print("This is logo adding tool, version " + str(VERSION))
 print("\n**************************\n")
 
 # gets the logo file number with extension from the user
