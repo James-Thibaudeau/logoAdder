@@ -8,7 +8,8 @@ A bare-bones python script to quickly add a logo to photos.
 
 In order to use the script, pillow must be installed: 
 
-```pip install Pillow
+```
+pip install Pillow
 ```
 
 Available on Python 2.x and Python 3.x
