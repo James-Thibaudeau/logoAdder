@@ -1,4 +1,4 @@
-# logoAdder
+# Logo Adder
 
 This is a tool I created for StartUp Algonquin to automate adding the club logo to event photos.
 
